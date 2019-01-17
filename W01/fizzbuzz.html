@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--suppress HtmlFormInputWithoutLabel -->
+<input id="input">
+<button id="btn">GENERATE</button>
+<ul id="list"></ul>
+
+<script>
+    let inputBox = document.getElementById("input");
+    let buttonID = document.getElementById("btn");
+    let listID = document.getElementById("list");
+    let startTime = new Date().getTime();
+    let num = inputBox.text;
+    console.log(num);
+    buttonID.onclick = function () {
+        for (let i = 1; i <= 100; i++) {
+            let item = "";
+            if (i % 3 === 0 && i % 5 === 0) {
+                item += 'fizz-buzz';
+            } else if (i % 3 === 0) {
+                item += 'fizz';
+            } else if (i % 5 === 0) {
+                item += 'buzz';
+            } else {
+                item += i;
+            }
+            listID.innerHTML += '<li>' + item + '</li>';
+        }
+    };
+    let endTime = new Date().getTime();
+    console.log(endTime-startTime);
+</script>
+
+</body>
+</html>

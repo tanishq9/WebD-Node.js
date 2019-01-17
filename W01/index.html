@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            font-family: serif;
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+
+<!--suppress HtmlFormInputWithoutLabel -->
+<input id="todo">
+<br>
+<button id="btn">ADD</button>
+<br>
+<ul id="list">
+    <li>Task one</li>
+</ul>
+<p id="para"> Paragraph </p>
+<!--
+No HTML can be written inside a script !
+-->
+<script>
+    /*document refer to the whole page*/
+    let todoBox = document.getElementById("todo");
+    let addBtn = document.getElementById("btn");
+    let todoList = document.getElementById('list');
+    addBtn.onclick = function(){
+        let todo = todoBox.value;
+/*
+        todoList.innerHTML+='<li>'+todo+'</li>';
+*/
+        let newTaskListItem =  document.createElement('li'); // <li></li>
+        newTaskListItem.innerText = todo;
+        todoList.appendChild(newTaskListItem)
+    };
+</script>
+
+</body>
+</html>
