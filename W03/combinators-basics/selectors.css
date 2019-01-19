@@ -1,0 +1,43 @@
+/* combination of selectors */
+li{
+    font-weight: bold;
+}
+
+/* only applies to li which is a direct child */
+ul>li{
+    color: blue;
+}
+
+ol>li{
+    color: red;
+}
+
+ul ul{
+    /* means ul is not directly inside ul */
+    /* in our html code , there is one li element between ul and ul */
+    font-style: italic;
+}
+
+/* ul li{
+    color: green;
+} */
+
+/* The above code tells that whether
+ li is directly or indirectly inside ul 
+color green will be applied to li */
+
+ul li ul li{
+    color: green;
+}
+
+/* matlab ul ke andar ke li ke andar ki list ul
+ke andar ka li ke ander ke list ul ke andar ka li */
+ul li ul li ul li{
+    color: brown;
+}
+
+/* this means if ul is next sibling of ol */
+ol ~ ul {
+    font-size: 30px;
+    background: chartreuse;
+}

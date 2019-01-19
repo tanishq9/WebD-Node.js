@@ -1,0 +1,44 @@
+/* This is an all-element selector */
+*{
+    color: firebrick;
+    /* margin-top: 100px; */
+    /* this applies 100px to each and every element present in the document */
+}
+
+/* This is an element selector */
+p{
+    text-align: center;
+    color: blueviolet;
+}
+
+div{
+    margin-left: 30px;
+}
+
+body{
+    /* This is for all content in the body tag and not individually for each element in this tag */
+    /* Poori team ko ek trophy milegi not ki har team player ko ek trophy milegi */
+    margin-top: 80px;
+} 
+
+/* This is an id selector */
+#p1{
+    font-family: Impact;
+}
+
+#p2{
+    font-family: Times New Roman;
+}
+
+#p3{
+    font-family: fantasy;
+}
+
+/* This is a class selector */
+.osmpara{
+    background-color:lightpink;
+}
+
+.bigpara{
+    font-size: 50px;    
+}

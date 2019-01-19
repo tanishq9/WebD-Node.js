@@ -1,0 +1,27 @@
+.box{
+    /* margin: 20px;*/
+    margin-bottom: 20px; 
+    margin-right: 20px;
+    /* if we write only margin 
+    it includes margin top , margin bottom , margin left and margin right */
+    padding: 10px;
+    /* same goes for padding , only writing padding implies padding from all sides */
+    border: solid black 10px;
+    /* thats how we define a border */
+    /* shape color thickness */
+}
+#div1{
+    background-color: lightgreen;
+}
+#div2{
+    background-color: lightsalmon;
+}
+#div3{
+    background-color: lightcyan;
+}
+
+/* The ouput page will have div1 seperated from div2 seperated from div3
+by a margin of 20px FROM ALL SIDES and thus they all wont be on the same side
+div1 has margin 20px from left of body , from right of div2 and top and bottom also,
+same can be said for div2 and div3 */
+/* div2 has margin of 20px from div1(margin left),20 px from div3 (margin right) and from top&bottom also */
