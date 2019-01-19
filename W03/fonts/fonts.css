@@ -1,0 +1,21 @@
+#para1{
+    font-size: 30px;
+    /* font-size: 10vp; */
+}
+#para2{
+    font-family: serif; /* serif means edges in word like in Times New Roman */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* it means inn 6 mei se jo available hoga vo use hoga depending on browser and even os starting from leftmost font-family */
+}
+#para3{
+    font-style: italic;
+    /* will apply both font weights */
+    font-weight: lighter;
+    font-weight: bolder;
+}
+#para4{
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+/* Mainly we'll we using these font properties */
