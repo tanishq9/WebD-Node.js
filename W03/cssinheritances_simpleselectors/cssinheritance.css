@@ -1,0 +1,17 @@
+*{
+    background-color: lightblue;
+}
+
+.cl1{
+    background-color: lightcoral;
+}
+
+#id1{
+    background-color: lightgreen;
+}
+
+div{
+    background-color: lightseagreen;
+}
+/* Order of inheritance for different kind of selectors */
+/* id>class>element>* */
