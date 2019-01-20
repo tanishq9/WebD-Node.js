@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- keyframe animations are used to change CSS as a function of time -->
+
+        <style>
+            
+            div{
+                margin: 50px;
+                background: blue;
+                width: 80px;
+                height: 80px;
+            }
+
+            @keyframes slide{
+                from{
+                    margin-left: 30px;
+                }to{
+                    margin-left: 400px;
+                }
+            }
+
+            @keyframes crazyslide{
+                0%{
+                    background:lightblue;
+                }
+                25%{
+                    background: aqua;
+                    height: 50px;
+                    margin-left: 180px;
+                }
+                50%{
+                    background: lightsteelblue;
+                    height: 25px;
+                    margin-left: 350px;
+                }
+                75%{
+                    background:blueviolet;
+                    height: 50px;
+                    margin-left: 530px;
+                }
+                100%{
+                    background: blue;
+                    height: 80px;
+                    margin-left: 800px;
+                }
+            }
+
+            @keyframes slideright {
+                0% {
+                
+                }
+                50% {
+                    transform: translateX(100px)
+                }
+                100% {
+                    transform: translateY(30px)
+                }
+            }
+
+            #div1:hover + div{
+                animation-name: slide;
+                animation-duration: 4s;
+                animation-iteration-count: 30;
+            }
+
+            #div3:hover + div{
+                animation-name: crazyslide;
+                animation-duration: 3s;
+                animation-iteration-count: 10;
+            }
+
+            #div4:hover + div{
+                animation-name: slideright;
+                animation-duration: 10s;
+                animation-iteration-count: 10;
+            }
+
+        </style>    
+        
+    </head>
+    <body>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+    </body>
+</html>
