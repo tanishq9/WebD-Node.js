@@ -20,14 +20,15 @@
     .inner {
       background-color: mediumslateblue;
     }
-    #two {
+    #one {
     top: 0; /* top must be mentioned when using sticky position */
     position: sticky;
+    /* doesnt work on many browsers */
     }
   </style>
 </head>
 <body>
-  <div class="outer one">
+  <div id="one" class="outer one">
     <div class="middle one">
       <div class="inner one">
         one
