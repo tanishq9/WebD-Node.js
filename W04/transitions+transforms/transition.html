@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+
+            div{
+                margin: 100px;
+            }
+
+            #div1{
+                width: 100px;
+                height: 100px;
+                background: rebeccapurple;
+            }
+
+            #div1:hover{
+                background: purple;
+                height: 40px;
+                transition: background 2s,height 2s;
+            }
+
+            #div2:hover{
+                background: green;
+                transition: background 2s;
+            }
+
+            #div2{
+                width: 50px;
+                height: 50px;
+                background: greenyellow;
+            }
+
+            #div1:hover + div{
+                margin-left: 50px;
+                background: green;
+                transition: margin 2s,background 2s;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </body>
+</html>
