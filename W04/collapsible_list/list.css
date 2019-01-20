@@ -1,0 +1,31 @@
+/* display of anything inside list item is hidden */
+/* This pattern ul li ul at any levels will give hidden value  */
+
+/* matlab kisi bhi list item ke andar list(ul) hai toh make it hidden  */
+li > ul{
+    /* visibility: hidden; 
+    height:0;
+     */
+    display: none;  
+}
+
+/* Simply put it as */
+/* ul ul{
+    display: none;
+} */
+
+
+/* A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). */
+li:hover{
+    color: red;
+}
+
+/* combinator+ pseudo class */
+/* only for direct child of li:hover */
+/* means ul is just one level inside of li:hover */
+li:hover > ul{
+    /* visibility: visible;
+    height:auto;
+     */
+    display: block;  
+}
