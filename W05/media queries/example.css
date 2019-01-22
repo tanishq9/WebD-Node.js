@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item{
+    background-color: darkcyan;
+}
+
+.sidebar{
+    flex-grow: 1;
+}
+
+.content{
+    flex-grow: 3;
+    background-color: lightblue;
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+
+@media(min-width:750px) and (max-width:1000px){
+    .content{
+        width: 400px;
+        padding: 30px;
+    }
+    .container{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 750px){
+    ul li{
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+        border: black solid 2px;
+    }
+}
+
+@media(min-width:1000px){
+    .content{
+        width: 600px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+/* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */

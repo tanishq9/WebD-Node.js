@@ -1,0 +1,29 @@
+#samplediv{
+    height: 300px;
+    width: 300px;
+    background-color: indianred;
+}
+
+@media(max-width:1500px) and (min-width:1000px){
+    #samplediv{
+        background-color: peru;
+    }
+}
+
+@media(max-width:750px) and (min-width:500px){
+    #samplediv{
+        background-color: purple;
+    }
+}
+
+@media(max-width:500px) and (min-width:100px){
+    #samplediv{
+        background-color: green;
+    }
+}
+
+@media(not (color)){
+    #samplediv{
+        background-color: grey;
+    }
+}
