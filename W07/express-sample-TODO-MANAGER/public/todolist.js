@@ -21,9 +21,10 @@ $(function(){
         // by just interacting with the server and DOESNT reload the page
         $.post(
             // We are sending request using AJAX from frontend to backend and then show data back to the frontend
-            '/todos',
-            {task:newtodo},// we receive this data in req.body.task ,check todo.js for clarification
+            '/todos', // jis link pe post request bhejni hai
+            {task:newtodo},// we receive this data in req.body.task ,check todos.js for clarification
             function(data){ // this data is an array of all the tasks whose size keeps on increasing
+                // or this is an array of all the tasks that we have posted to server till now
                 console.log(data);
                 todolist.empty();
                 for(todo of data){
