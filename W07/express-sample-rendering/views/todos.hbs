@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+    <body>
+        {{!-- action means I will submit to this URL --}}
+        <form action="/todos" method="POST">
+            <input name="newtodo">
+            <input type="submit">
+        </form>
+        <ul>
+            {{!-- Using handle bar syntax, we can modify the list --}}
+            {{#each todos as |todo|}}
+                <li>{{todo.task}}</li>
+            {{/each}}
+        </ul>
+        {{!-- The above code inside todo mean that 
+        the above each will be repeated for every
+        element of array todos --}}
+       
+        {{!-- We will create a todo item for every item of todos --}}
+    </body>
+</html>
