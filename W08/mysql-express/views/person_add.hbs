@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a person</h1>
+    {{!-- if i write /add then I had to write /pages/add 
+    add just gives the relative path  --}}
+    <form action="add" method="POST">
+        {{!-- When we send POST request to server , we send a JSON oject , where
+        the format is like : {X1:value,X2:value,X3:value...} --}}
+        {{!-- Here X1 is the name of the element corresponding to which value is send   --}}
+        <input type="text" placeholder="Name" name="name"><br>
+        <input type="number" placeholder="Age" name="age"><br>
+        <input type="text" placeholder="City" name="city"><br>    
+        <input type="submit"><br>
+    </form>
+
+</body>
+</html>
