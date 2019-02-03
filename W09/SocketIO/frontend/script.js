@@ -44,6 +44,9 @@ $(function(){
         chat_div.show();
         login_div.hide();
         console.log('Logged In.');
+
+        // Emitting the user name (Emit here means sending some data to server side on login)
+        socket.emit('login_data',user_name);
     });
 
 })
