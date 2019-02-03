@@ -14,9 +14,11 @@ io.on('connection',function(socket){ // On sucessful connecction , we get a sock
     console.log('New socket from '+socket.id);
     socket.emit('connected');
     socket.on('send_msg',function(data){
-        console.log('Received message : ' + data.message);
-        io.emit('rec_msg',data.message);
+        console.log('Received message : ' + data.message +" by "+data.user);
+        io.emit('rec_msg',data);
         // this will be emitted to all the clients via socket made with individual client
+        // socket.broadcast.emit('rec_msg',data);
+        // using broadcast only other users(sockets) will get the message , not the socket sending the message
     });
 }) 
 

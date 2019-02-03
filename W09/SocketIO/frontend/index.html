@@ -11,8 +11,17 @@
     </head>
     <body>
         <h1>Socket.IO Example</h1>
-        <input type="text" id="message">
-        <button id="submit">Send</button><br>
-        <ul id="message-list"></ul>
+        <div id="welcome-message">
+            <span id="user-name"><b>Please Log In.</b></span>
+        </div>
+        <div id="login-div">
+            <input type="text" id="login-box" placeholder="Enter username ">
+            <button id="login-button">Login</button>
+        </div>
+        <div id="chat-div" style="display:none">
+            <input type="text" id="message" placeholder="Enter message">
+            <button id="submit-button">Send</button><br>
+            <ul id="message-list"></ul>
+        </div> 
     </body>
 </html>
