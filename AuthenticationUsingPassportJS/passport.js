@@ -8,11 +8,13 @@ const Users = require('./db').Users
 
 // To save user data into current Session , we are only saving the user name here
 passport.serializeUser(function (user, done) {
+    console.log("Serialize Triggered");
     done(null, user.username)
 })
 
 // To find out which user is saved in a session
 passport.deserializeUser(function (username, done) {
+    console.log("Deserialize Triggered");
     Users.findOne({
         username: username
     }).then((user) => {
@@ -26,6 +28,9 @@ passport.deserializeUser(function (username, done) {
 })
 
 passport.use(new LocalStrategy(function (username, password, done) {
+    console.log("Local Strategy Triggered.")
+    console.log(username);
+    console.log(password);
     Users.findOne({
         where: {
             username: username
