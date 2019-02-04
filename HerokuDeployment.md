@@ -1,4 +1,4 @@
-Steps for heroku deployment :
+## Steps for heroku deployment :
 
 1. Create a Github repository for the project(website:frontend+backend) which you want to deploy on heroku.
 2. Make sure you have installed Heroku CLI, if yes then move on to the next step.
