@@ -17,7 +17,9 @@ app.post('/name',function(req,res){
      var process = spawn('python',['./hello.py',req.body.person_name]);
      // req.body.name will be sys.argv[1]
      process.stdout.on('data',function(result){
-        //res.send(result);
+        var textChunk = result.toString('utf-8'); // buffer to string
+        console.log(textChunk);
+        res.send(textChunk);
      });
     console.log('Version 2 : Calling Python script from a Node child process, using python-shell package');
       var options = {
@@ -28,9 +30,10 @@ app.post('/name',function(req,res){
      
       PythonShell.run('./moviename.py',options,function(err,data){
          if(err){
-             res.send(err);
+ //            res.send(err);
          }
-         res.send(data);
+ 
+ //        res.send(data);
       });
 });
 
