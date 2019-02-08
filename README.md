@@ -1,1 +1,3 @@
 # Web-Developement
+
+Basics of HTML & CSS , Inheritence rules ,  usage of selectors , media-queries , keyframes , bootstrap , creating and using npm packages , using ExpressJS for creating servers , handlebars for rendering in case of JS disabled pages and jQuery for making AJAX  calls in case of JS enabled pages , MySQL for data persistence , Sequelize for ORM (Object Relational Mapping) , building REST APIs ,Socket.IO for real-time messaging, MongoDB and mongoose for using NoSQL database , Authentication using PassportJS , consuming the REST APIs over android app using http client,Using Python scripts on NodeJS and running custom sklearn , tensorflow or keras pre-trained ML/DL model in our backend. 
