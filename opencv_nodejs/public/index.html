@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <img id="image">
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            const socket = io.connect('http://localhost:4444/');
+            socket.on('image',function(image){
+                const imageElem = document.getElementById('image');
+                imageElem.src = `data:image/jpeg;base64,${image}`;
+            });
+        </script>
+    </head>
+    <body style="text-align:center">
+        <h1>Inference</h1>
+        <div id="text"></div>
+    </body>
+</html>
