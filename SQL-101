@@ -1,0 +1,16 @@
+Important database points :
+
+service mysql start;
+service mysql status;
+mysql -u username -p; // example username can be 'root'
+
+create database database_name;
+create user;
+use database_name;
+grant all privileges on database_name.* to user_name;
+flush privileges;
+
+show databases;
+use database_name;
+show tables;
+describe table_name;

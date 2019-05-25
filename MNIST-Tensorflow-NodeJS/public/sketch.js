@@ -14,6 +14,8 @@ $(function(){
         // base 64 encoding
         var data = canvas.toDataURL('image/png').replace(/data:image\/png;base64,/, '');
         
+        // var data  = btoa(canvas);
+
         console.log('Button clicked');
         
         console.log(data); // this is the encoded string

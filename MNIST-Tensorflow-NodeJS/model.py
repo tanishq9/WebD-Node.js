@@ -8,6 +8,7 @@ def predict():
     new_model = load_model('mnist_model_keras_collab.h5')
     #print('model_loaded')
     img = image.load_img(path='input.png',color_mode="grayscale",target_size=(28,28,1))
+    #img = image.load_img(input_img,color_mode="grayscale",target_size=(28,28,1))
     #print('image_loaded')
     img = image.img_to_array(img)
     #print('running_inference')
