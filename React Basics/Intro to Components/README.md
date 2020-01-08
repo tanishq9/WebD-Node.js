@@ -1,6 +1,4 @@
-You'll learn how React creates and renders elements. You'll also convert manual element creation to JSX, use create-react-app to scaffold projects, and get a brief intro to Components.
-
-<br>
+####  Learn how React creates and renders element, converts manual element creation to JSX, use create-react-app to scaffold projects, and get a brief intro to Components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
